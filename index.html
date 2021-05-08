@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1 class="text-center text-primary my-5">Products</h1>
+    <div class="container">
+        <div class="my-4">
+            <label class="mb-1 fw-bold" for="">Product Name:</label>
+            <input class="form-control" id="pName" >
+        </div>
+        <div class="my-4">
+            <label class="mb-2 fw-bold " for="">Product Price :</label>
+            <input class="form-control" id="pPrice" >
+        </div>
+        <div class="my-4">
+            <label class="mb-2 fw-bold " for="">Product Category:</label>
+            <input class="form-control" id="pCat" >
+        </div>
+        <div class="my-4">
+            <label for="" class=" mb-2 fw-bold">Product Description:</label>
+            <input class="form-control" id="pDes" >
+        </div>
+
+
+
+        <button class="btn btn-primary btn-lg mb-5" onclick="addProduct()">Add Product</button>
+    </div>
+
+    <input onkeyup="searchProduct(this.value)" class="form-control my-4 w-50 mx-auto" placeholder="Search Product">
+
+    <table class="table my-5 container">
+
+        <thead>
+            <th>index</th>
+            <th>Name</th>
+            <th>Price($) </th>
+            <th>Category </th>
+            <th>Description</th>
+            <th>For Delete</th>
+
+        </thead>
+
+        <tbody id="demo">
+
+
+        </tbody>
+
+
+    </table>
+
+    
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>
